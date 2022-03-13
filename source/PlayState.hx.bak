@@ -434,20 +434,6 @@ class PlayState extends MusicBeatState
 					stageCurtains.updateHitbox();
 					add(stageCurtains);
 				}
-			
-			case 'pcplace': // RSambi
-				swagBG = new FlxSprite(-600, -200).loadGraphic(Paths.image('rsguybambibg'));
-				//swagBG.scrollFactor.set(0, 0);
-				swagBG.scale.set(1.75, 1.75);
-				//swagBG.updateHitbox();
-				var testshader:Shaders.GlitchEffect = new Shaders.GlitchEffect();
-				testshader.waveAmplitude = 0.1;
-				testshader.waveFrequency = 1;
-				testshader.waveSpeed = 2;
-				swagBG.shader = testshader.shader;
-				sprites.add(swagBG);
-				add(swagBG);
-				curbg = swagBG;
 
 			case 'spooky': //Week 2
 				if(!ClientPrefs.lowQuality) {
