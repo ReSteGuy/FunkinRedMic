@@ -438,7 +438,7 @@ class PlayState extends MusicBeatState
 				}
 			
 			case 'pcplace': // RSambi
-				pcBG = new BGSprite('rsguybambibg', -600, -200, 1.75, 1.75;
+				pcBG = new BGSprite('rsguybambibg', -600, -200, 1.75, 1.75);
 				//swagBG.scrollFactor.set(0, 0);
 				//swagBG.updateHitbox();
 				var testshader:Shaders.GlitchEffect = new Shaders.GlitchEffect(2, 1, 0.1);
