@@ -198,6 +198,8 @@ class PlayState extends MusicBeatState
 	var dialogue:Array<String> = ['blah blah blah', 'coolswag'];
 	var dialogueJson:DialogueFile = null;
 
+	var swagBG:BGSprite;
+	
 	var halloweenBG:BGSprite;
 	var halloweenWhite:BGSprite;
 
