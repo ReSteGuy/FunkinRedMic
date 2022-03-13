@@ -198,7 +198,7 @@ class PlayState extends MusicBeatState
 	var dialogue:Array<String> = ['blah blah blah', 'coolswag'];
 	var dialogueJson:DialogueFile = null;
 
-	var swagBG:BGSprite;
+	var pcBG:BGSprite;
 	
 	var halloweenBG:BGSprite;
 	var halloweenWhite:BGSprite;
@@ -438,15 +438,13 @@ class PlayState extends MusicBeatState
 				}
 			
 			case 'pcplace': // RSambi
-				swagBG = new BGSprite(-600, -200).loadGraphic(Paths.image('rsguybambibg'));
+				pcBG = new BGSprite(-600, -200).loadGraphic(Paths.images('rsguybambibg'));
 				//swagBG.scrollFactor.set(0, 0);
-				swagBG.scale.set(1.75, 1.75);
+				pcBG.scale.set(1.75, 1.75);
 				//swagBG.updateHitbox();
 				var testshader:Shaders.GlitchEffect = new Shaders.GlitchEffect(2, 1, 0.1);
-				swagBG.shader = testshader.shader;
-				sprites.add(swagBG);
-				add(swagBG);
-				curbg = swagBG;
+				pcBG.shader = testshader.shader;
+				add(pcBG);
 
 			case 'spooky': //Week 2
 				if(!ClientPrefs.lowQuality) {
