@@ -460,7 +460,7 @@ class PlayState extends MusicBeatState
 				add(pcBG);
 			
 			case 'blockplace': // Bambi
-				blockBG = new BGSprite('bambistage', -600, -200, 3, 3);
+				blockBG = new BGSprite('bambistage', -600, -200, 1.75, 1.75);
 				//swagBG.scrollFactor.set(0, 0);
 				//swagBG.updateHitbox();
 				var testshader:Shaders.GlitchEffect = new Shaders.GlitchEffect(2, 1, 0.1);
