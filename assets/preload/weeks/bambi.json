@@ -1,0 +1,49 @@
+{
+	"songs": [
+		[
+			"Repeated",
+			"bambirepeat",
+			[
+				0,
+				113,
+				0
+			]
+		],
+		[
+			"Rescrewed",
+			"bambirepeat",
+			[
+				0,
+				153,
+				0
+			]
+		],
+		[
+			"Unreal",
+			"bambirepeat",
+			[
+				0,
+				53,
+				0
+			]
+		]
+	],
+	"hideFreeplay": false,
+	"weekBackground": "madbambi",
+	"difficulties": "Normal",
+	"weekCharacters": [
+		"",
+		"",
+		""
+	],
+	"storyName": "Mistaken Moments",
+	"weekName": "Week 3DScrewBambi.xml",
+	"freeplayColor": [
+		146,
+		113,
+		253
+	],
+	"hideStoryMode": false,
+	"weekBefore": "tutorial",
+	"startUnlocked": true
+}

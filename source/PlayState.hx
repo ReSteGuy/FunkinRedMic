@@ -200,6 +200,11 @@ class PlayState extends MusicBeatState
 
 	var pcBG:BGSprite;
 	
+	var plainssky:BGSprite;
+	var plainsground:BGSprite;
+	
+	var blockBG:BGSprite;
+	
 	var halloweenBG:BGSprite;
 	var halloweenWhite:BGSprite;
 
@@ -437,6 +442,15 @@ class PlayState extends MusicBeatState
 					add(stageCurtains);
 				}
 			
+			case 'plains': // RSambi but two dimensiaonl
+				var plainssky:BGSprite = new BGSprite('plainssky', -600, -200, 0.9, 0.9);
+				add(plainssky);
+
+				var plainsground:BGSprite = new BGSprite('plainsgrass', -650, 600, 0.9, 0.9);
+				plainsground.setGraphicSize(Std.int(plainsground.width * 1.1));
+				plainsground.updateHitbox();
+				add(plainsground);
+			
 			case 'pcplace': // RSambi
 				pcBG = new BGSprite('rsguybambibg', -600, -200, 1.75, 1.75);
 				//swagBG.scrollFactor.set(0, 0);
@@ -444,6 +458,14 @@ class PlayState extends MusicBeatState
 				var testshader:Shaders.GlitchEffect = new Shaders.GlitchEffect(2, 1, 0.1);
 				pcBG.shader = testshader.shader;
 				add(pcBG);
+			
+			case 'blockplace': // Bambi
+				blockBG = new BGSprite('bambistage', -600, -200, 1.75, 1.75);
+				//swagBG.scrollFactor.set(0, 0);
+				//swagBG.updateHitbox();
+				var testshader:Shaders.GlitchEffect = new Shaders.GlitchEffect(2, 1, 0.1);
+				blockBG.shader = testshader.shader;
+				add(blockBG);
 
 			case 'spooky': //Week 2
 				if(!ClientPrefs.lowQuality) {

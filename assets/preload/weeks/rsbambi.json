@@ -1,0 +1,49 @@
+{
+	"songs": [
+		[
+			"Bambified",
+			"rsambi2d",
+			[
+				206,
+				0,
+				93
+			]
+		],
+		[
+			"Well I Be Bambed",
+			"rsambi",
+			[
+				206,
+				0,
+				13
+			]
+		],
+		[
+			"Same Person",
+			"questionmark",
+			[
+				40,
+				0,
+				0
+			]
+		]
+	],
+	"hideFreeplay": false,
+	"weekBackground": "rsambi",
+	"difficulties": "Normal",
+	"weekCharacters": [
+		"",
+		"",
+		""
+	],
+	"storyName": "Transformed ADHD RSGuy",
+	"weekName": "Week RSambi",
+	"freeplayColor": [
+		146,
+		113,
+		253
+	],
+	"hideStoryMode": false,
+	"weekBefore": "tutorial",
+	"startUnlocked": true
+}
