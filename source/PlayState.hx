@@ -438,14 +438,11 @@ class PlayState extends MusicBeatState
 				}
 			
 			case 'pcplace': // RSambi
-				swagBG = new FlxSprite(-600, -200).loadGraphic(Paths.image('rsguybambibg'));
+				swagBG = new BGSprite(-600, -200).loadGraphic(Paths.image('rsguybambibg'));
 				//swagBG.scrollFactor.set(0, 0);
 				swagBG.scale.set(1.75, 1.75);
 				//swagBG.updateHitbox();
-				var testshader:Shaders.GlitchEffect = new Shaders.GlitchEffect();
-				testshader.waveAmplitude = 0.1;
-				testshader.waveFrequency = 1;
-				testshader.waveSpeed = 2;
+				var testshader:Shaders.GlitchEffect = new Shaders.GlitchEffect(2, 1, 0.1);
 				swagBG.shader = testshader.shader;
 				sprites.add(swagBG);
 				add(swagBG);
