@@ -1,0 +1,30 @@
+{
+	"song": {
+		"speed": 1.4,
+		"stage": "pcplace",
+		"player1": "bf",
+		"player2": "rsb",
+		"player3": null,
+		"events": [
+			[
+				21600,
+				[
+					[
+						"Change Scroll Speed",
+						"2",
+						"0"
+					]
+				]
+			]
+		],
+		"notes": [],
+		"splashSkin": "noteSplashes",
+		"validScore": false,
+		"gfVersion": "gf",
+		"bpm": 100,
+		"arrowSkin": "",
+		"needsVoices": true,
+		"song": "Same Person",
+		"doubleVoices": false
+	}
+}
