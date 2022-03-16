@@ -36,13 +36,8 @@ class MainMenuState extends MusicBeatState
 	var optionShit:Array<String> = [
 		'story_mode',
 		'freeplay',
-		'mania',
-		#if MODS_ALLOWED 'mods', #end
-		#if ACHIEVEMENTS_ALLOWED 'awards', #end
 		'credits',
-		#if !switch 'donate', #end
-		'options',
-		'rsych'
+		'options'
 	];
 
 	var magenta:FlxSprite;
@@ -242,26 +237,10 @@ class MainMenuState extends MusicBeatState
 										MusicBeatState.switchState(new StoryMenuState());
 									case 'freeplay':
 										MusicBeatState.switchState(new FreeplayState());
-									#if MODS_ALLOWED
-									case 'mods':
-										MusicBeatState.switchState(new ModsMenuState());
-									#end
-									case 'awards':
-										MusicBeatState.switchState(new AchievementsMenuState());
 									case 'credits':
 										MusicBeatState.switchState(new CreditsState());
 									case 'options':
 										LoadingState.loadAndSwitchState(new options.OptionsState());
-									case 'rsych':
-										LoadingState.loadAndSwitchState(new RsychState());
-									case 'mania':
-										PlayState.storyPlaylist = ['bopeebo', 'fresh', 'dad-battle', 'spookeez', 'monster', 'pico', 'philly-nice', 'satin-panties', 'high', 'milf', 'cocoa', 'eggnog', 'winter-horrorland', 'senpai', 'rose', 'thorns'];
-										PlayState.isStoryMode = true;
-										PlayState.SONG = Song.loadFromJson(PlayState.storyPlaylist[0].toLowerCase() + '-hard', PlayState.storyPlaylist[0].toLowerCase());
-										PlayState.campaignScore = 0;
-										PlayState.campaignMisses = 0;
-										LoadingState.loadAndSwitchState(new PlayState(), true);
-										FreeplayState.destroyFreeplayVocals();
 								}
 							});
 						}
